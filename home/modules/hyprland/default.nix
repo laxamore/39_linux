@@ -1,3 +1,5 @@
+{ config, ... }:
+
 {
   home = {
     sessionVariables = {
@@ -19,8 +21,10 @@
     };
   };
 
+  home.file.".config/hypr/hyprland.conf".source = config.lib.file.mkOutOfStoreSymlink ./hyprland.conf;
+
   wayland.windowManager.hyprland = {
     enable = true;
-    extraConfig = (builtins.readFile ./hyprland.conf);
+    # extraConfig = (builtins.readFile ./hyprland.conf);
   };
 }
