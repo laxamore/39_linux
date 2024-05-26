@@ -24,7 +24,18 @@
       ffmpegthumbnailer
       appimage-run
       nwg-look
-      mpd
+
+      wineWowPackages.waylandFull
+      winetricks
+
+      zoom-us
+
+      mpv
+
+      dbeaver-bin
+
+      ardour
+      libreoffice
 
       lxqt.lxqt-policykit
       nwg-displays

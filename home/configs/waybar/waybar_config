@@ -5,9 +5,10 @@
     "margin-top": 5,
     "layer": "top",
     "position": "top",
+
     "tray": {
-      "icon-size": 15,
-      "spacing": 5
+      "icon-size": 18,
+      "spacing": 10
     },
 
     "disk": {
@@ -15,24 +16,11 @@
       "format": " 󰨣 {free} available",
       "unit": "GB"
     },
-    "mpd": {
-      "format": "<span foreground='#bb9af7'></span> {title}",
-      "format-disconnected": "",
-      "format-paused": " {title}",
-      "format-stopped": "<span foreground='#bb9af7'></span>",
-      "max-length": 25,
-      "on-click": "mpc --quiet toggle",
-      "on-click-middle": "kitty --class='ncmpcpp' ncmpcpp ",
-      "on-click-right": "mpc update; mpc ls | mpc add",
-      "on-scroll-down": "mpc --quiet next",
-      "on-scroll-up": "mpc --quiet prev",
-      "smooth-scrolling-threshold": 5,
-      "tooltip-format": "{title} - {artist} ({elapsedTime:%M:%S}/{totalTime:%H:%M:%S})"
-    },
 
     "modules-left": [
-      "hyprland/workspaces",
-      "disk"
+      "network",
+      "tray",
+      "clock"
     ],
 
     "clock": {
@@ -43,11 +31,11 @@
     },
 
     "modules-center": [
-      "clock"
+      "hyprland/workspaces"
     ],
 
     "wireplumber": {
-      "format": "󰕾 {volume}%"
+      "format": " 󰕾 {volume}%"
     },
 
     "backlight": {
@@ -97,9 +85,7 @@
       "battery",
       "temperature",
       "memory",
-      "cpu",
-      "network",
-      "tray"
+      "cpu"
     ]
   }
 ]
