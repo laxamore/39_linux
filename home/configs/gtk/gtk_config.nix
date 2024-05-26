@@ -16,13 +16,18 @@
     };
 
     theme = {
-      name = "Tokyonight-Dark-B-LB";
-      package = pkgs.tokyo-night-gtk;
+      name = "Adwaita-dark";
     };
 
     cursorTheme = {
       name = "Bibata-Modern-Classic";
       package = pkgs.bibata-cursors;
+    };
+
+    gtk3 = {
+      extraConfig = {
+        gtk-application-prefer-dark-theme = "1";
+      };
     };
   };
 }

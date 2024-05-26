@@ -13,6 +13,7 @@
       keepassxc
       nextcloud-client
       tokyo-night-gtk
+      catppuccin-gtk
       stm32cubemx
       dotnet-runtime
       pavucontrol
@@ -39,6 +40,8 @@
       gnome.eog
       gnome.zenity
       gnome.nautilus
+      gnome.gnome-themes-extra
+      gdk-pixbuf
 
       rustup
       rustc

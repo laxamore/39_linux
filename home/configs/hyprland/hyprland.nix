@@ -17,7 +17,7 @@
     XDG_SESSION_DESKTOP = "Hyprland";
     XDG_SESSION_TYPE = "wayland";
 
-    GTK_THEME = "Tokyonight-Dark-B";
+    GTK_THEME = "Adwaita-dark";
   };
 
   wayland.windowManager.hyprland = {
