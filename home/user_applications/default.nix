@@ -32,6 +32,8 @@
 
       mpv
 
+      postman
+
       dbeaver-bin
 
       ardour
@@ -62,5 +64,8 @@
       docker-compose
       openssl
       pkg-config
+
+      usbutils
+      pciutils
     ]);
 }
