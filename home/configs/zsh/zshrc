@@ -1,0 +1,3 @@
+alias cdd="cd ~/repo/laxamore/myconfig/dotfiles"
+alias crd="cd ~/repo"
+alias cwrd="cd ~/repo/transtrack"

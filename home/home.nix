@@ -1,31 +1,36 @@
-{ config, pkgs, ...}: {
+{ pkgs, ...}: {
 
   imports = [
-    ./modules
+    ./configs
     ./scripts
+    ./user_applications
   ];
+
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
 
   home = {
     username = "laxa";
     homeDirectory = "/home/laxa";
   };
 
-  home.packages = (with pkgs; [
-    brave
-    discord
-    vscode
-    keepassxc
-    nextcloud-client
-    git
-  ]);
-
   dconf = {
+    enable = true;
     settings = {
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
       };
+
+      "org/gnome/shell/extensions/user-theme" = {
+        name = "Tokyonight-Dark-B-LB";
+      };
     };
   };
+
+  xdg.systemDirs.data = [
+    "${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}"
+    "${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}"
+  ];
 
   programs = {
     home-manager.enable = true;
