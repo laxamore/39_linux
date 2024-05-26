@@ -6,6 +6,7 @@
     # Add any missing dynamic libraries for unpackaged programs
     # here, NOT in environment.systemPackages
     stdenv.cc.cc
+    pkg-config
     openssl
     fuse
     glib

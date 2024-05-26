@@ -39,5 +39,13 @@
       gnome.eog
       gnome.zenity
       gnome.nautilus
+
+      rustup
+      rustc
+      gcc
+      kicad
+      docker
+      openssl
+      pkg-config
     ]);
 }

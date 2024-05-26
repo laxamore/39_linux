@@ -9,9 +9,15 @@
       ./networking.nix
       ./nix-ld.nix
       ./security.nix
+      ./compat
       ./global_applications
       ../desktop
     ];
+
+  environment.fhs.enable = true;
+  environment.fhs.linkLibs = true;
+  environment.lsb.enable = true;
+  environment.lsb.support32Bit = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
