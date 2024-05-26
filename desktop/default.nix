@@ -4,6 +4,7 @@
   imports = [
     ./audio.nix
     ./fonts.nix
+    ./virtualization.nix
   ];
 
   programs = {

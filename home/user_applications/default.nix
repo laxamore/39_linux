@@ -59,7 +59,7 @@
       rustc
       gcc
       kicad
-      docker
+      docker-compose
       openssl
       pkg-config
     ]);
