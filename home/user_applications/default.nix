@@ -24,6 +24,7 @@
       ffmpegthumbnailer
       appimage-run
       nwg-look
+      mpd
 
       lxqt.lxqt-policykit
       nwg-displays
