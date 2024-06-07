@@ -15,6 +15,7 @@
     pkgs = nixpkgs.legacyPackages.${system};
   in {
     darwinConfigurations."masihkasar-MacBook" = nix-darwin.lib.darwinSystem {
+      inherit system;
       modules = [ ./configuration.nix ];
     };
 
