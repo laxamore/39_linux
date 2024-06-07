@@ -5,6 +5,6 @@
     ./waybar
     ./zsh
     ./gtk
-    ./systemd
+    ./thunar/thunar.nix
   ];
 }
