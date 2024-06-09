@@ -7,6 +7,7 @@
       ./locale.nix
       ./login.nix
       ./networking.nix
+      ./udev_rule.nix
       ./nix-ld.nix
       ./security.nix
       ./compat
