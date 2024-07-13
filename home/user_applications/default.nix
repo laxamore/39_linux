@@ -3,7 +3,7 @@
 {
   imports = [
     ./zsh
-    ./ardour
+    ./daw
   ];
 
   home.packages = (with pkgs; [
@@ -39,10 +39,6 @@
     tmux
     neofetch
     unrar
-    
-    # Wine and Windows Compatibility
-    wineWowPackages.waylandFull
-    winetricks
     
     # Office
     libreoffice

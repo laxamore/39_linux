@@ -5,6 +5,7 @@
     ./audio.nix
     ./fonts.nix
     ./virtualization.nix
+    ./wine.nix
   ];
 
   # Enable the KDE Plasma 5 desktop environment
