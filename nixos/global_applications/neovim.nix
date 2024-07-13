@@ -8,6 +8,7 @@
       configure = {
         customRC = ''
 	  set number relativenumber
+    set clipboard=unnamedplus
 	'';
       };
     };

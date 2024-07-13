@@ -55,12 +55,16 @@
     tmux
     wl-clipboard
     cliphist
-    nautilus-open-any-terminal
     dconf
     swww
     networkmanagerapplet
     dunst
     neofetch
+    libsForQt5.ark
+    xfce.tumbler
+    ffmpegthumbnailer
+    unrar
+    xfce.mousepad
     
     # Wine and Windows Compatibility
     wineWowPackages.waylandFull
@@ -72,7 +76,6 @@
     # Desktop Environment and System Tools
     lxqt.lxqt-policykit
     gdk-pixbuf
-    xfce.thunar
     
     # Hardware Utilities
     usbutils
@@ -86,6 +89,9 @@
     
     # 3D Printing
     bambu-studio
+
+    # Virtualbox
+    virtualbox
   ]);
 
 }

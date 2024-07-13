@@ -10,15 +10,9 @@
       ./udev_rule.nix
       ./nix-ld.nix
       ./security.nix
-      ./compat
       ./global_applications
       ../desktop
     ];
-
-  environment.fhs.enable = true;
-  environment.fhs.linkLibs = true;
-  environment.lsb.enable = true;
-  environment.lsb.support32Bit = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -40,9 +34,11 @@
       laxa = {
         isNormalUser = true;
         description = "laxa";
-        extraGroups = [ "networkmanager" "wheel" "docker" ];
+        extraGroups = [ "networkmanager" "wheel" "docker" "dialout" "plugdev" ];
       };
     };
+
+    groups.plugdev = {};
   };
 
   environment.variables={
@@ -52,6 +48,21 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
   services.gvfs.enable = true;
+
+  services.xserver.desktopManager.gnome.extraGSettingsOverridePackages = with pkgs; [
+    nautilus-open-any-terminal
+  ];
+
+  environment.variables.QT_QPA_PLATFORMTHEME = "qt5ct";
+
+  nixpkgs.config.qt5 = {
+    enable = true;
+    platformTheme.name = "qt5ct"; 
+    style = {
+      package = pkgs.kvantum;
+      name = "kvantum";
+    };
+};
 
   nix = {
     package = pkgs.nixFlakes;

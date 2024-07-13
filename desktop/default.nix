@@ -19,9 +19,17 @@
   xdg.portal = {
     enable = true;
     wlr.enable = true;
-    # config.common.default = "*";
     extraPortals = [ 
       pkgs.xdg-desktop-portal-gtk 
     ];
   };
+
+  programs.thunar = {
+    enable = true;
+    plugins = [ pkgs.xfce.thunar-archive-plugin ];
+  };
+
+  environment.systemPackages = with pkgs; [
+    gnome.gnome-themes-extra
+  ];
 }

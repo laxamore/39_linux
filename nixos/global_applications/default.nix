@@ -7,7 +7,6 @@
 
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
-    killall
     wget
     curl
     htop
@@ -16,6 +15,8 @@
     home-manager
     git
     glib
+    arc-icon-theme
+    xarchiver
   ];
 
   programs.zsh.enable = true;

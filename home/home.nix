@@ -32,6 +32,17 @@
     "${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}"
   ];
 
+  qt = {
+    enable = true;
+    platformTheme.name = "qt5ct";
+    style.name = "kvantum";
+  };
+
+  xdg.configFile = {
+    "Kvantum/ArcDark".source = "${pkgs.arc-kde-theme}/share/Kvantum/ArcDark";
+    "Kvantum/kvantum.kvconfig".text = "[General]\ntheme=ArcDark";
+  };
+
   programs = {
     home-manager.enable = true;
   };
