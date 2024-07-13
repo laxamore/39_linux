@@ -1,8 +1,8 @@
+
 { pkgs, ... }:
 
 {
   imports = [
-    ./neovim.nix
   ];
 
   # List packages installed in system profile. To search, run:
