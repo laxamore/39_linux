@@ -6,8 +6,4 @@
     wineWowPackages.waylandFull
     winetricks
   ];
-
-  environment.variables={
-    WINELOADER = "${pkgs.wineWowPackages.waylandFull.out}/bin/wine64";
-  };
 }
