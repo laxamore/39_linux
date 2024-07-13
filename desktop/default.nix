@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./kde_plasma6
+    ./kde_plasma5
     # ./hyprland
   ];
 }

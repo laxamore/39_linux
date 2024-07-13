@@ -9,9 +9,9 @@
 
   # Enable the KDE Plasma 5 desktop environment
   services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.displayManager.sddm.wayland.enable = false;
-  services.xserver.displayManager.defaultSession = "plasma";
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = false;
+  services.displayManager.defaultSession = "plasma";
   services.xserver.desktopManager.plasma5.enable = true;
 
   # exclude some packages from the plasma5 desktop environment
@@ -20,12 +20,14 @@
     oxygen
   ];
 
-  # GNOME desktop integration
-  qt = {
-    enable = true;
-    platformTheme = "gnome";
-    style = "adwaita-dark";
-  };
-
   programs.dconf.enable = true;
+
+  # KDE Apps
+  environment.systemPackages = with pkgs; [
+    kdePackages.kdialog
+    kdePackages.kcalc
+  ];
+
+  # Settings
+  services.libinput.touchpad.naturalScrolling = true;
 }

@@ -6,7 +6,7 @@ let
     laxa = {
       isNormalUser = true;
       description = "laxa";
-      extraGroups = [ "networkmanager" "wheel" "docker" "dialout" "plugdev" ];
+      extraGroups = [ "networkmanager" "wheel" "docker" "dialout" "plugdev" "vboxusers" ];
     };
   };
 

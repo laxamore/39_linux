@@ -3,6 +3,7 @@
 {
   imports = [
     ./zsh
+    ./ardour
   ];
 
   home.packages = (with pkgs; [
@@ -31,7 +32,6 @@
     
     # Multimedia
     mpv
-    ardour
     pavucontrol
     
     # Utility Tools
@@ -50,15 +50,13 @@
     # Hardware Utilities
     usbutils
     pciutils
+    lshw
     
     # Gaming
     steam
     
     # 3D Printing
     bambu-studio
-
-    # Virtualbox
-    virtualbox
   ]);
 
 }
