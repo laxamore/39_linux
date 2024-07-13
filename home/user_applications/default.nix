@@ -4,6 +4,7 @@
   imports = [
     ./zsh
     ./daw
+    ./neovim
   ];
 
   home.packages = (with pkgs; [
