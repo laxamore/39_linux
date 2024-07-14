@@ -49,9 +49,6 @@
     pciutils
     lshw
     
-    # Gaming
-    steam
-    
     # 3D Printing
     bambu-studio
   ]);
