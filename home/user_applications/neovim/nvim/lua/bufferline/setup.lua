@@ -1,3 +1,5 @@
+require('bufferline.mapping')
+
 vim.opt.termguicolors = true
 
 local bufferline = require('bufferline')
