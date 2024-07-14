@@ -6,8 +6,4 @@
     wineWowPackages.staging
     winetricks
   ];
-
-  environment.variables = {
-    WINEPREFIX = "~/.wine_kde_plasma5";
-  };
 }
