@@ -11,6 +11,9 @@
     mplus-outline-fonts.githubRelease
     dina-font
     proggyfonts
+    terminus-nerdfont
+    fira-code-nerdfont
+    inconsolata-nerdfont
     nerdfonts
   ];
 }

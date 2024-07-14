@@ -23,10 +23,15 @@
 
   programs.dconf.enable = true;
 
-  # KDE Apps
   environment.systemPackages = with pkgs; [
+    # KDE Apps
     kdePackages.kdialog
     kdePackages.kcalc
+    kdePackages.kate
+
+    # Utilities
+    xsel
+    xclip
   ];
 
   # Settings

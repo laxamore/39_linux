@@ -3,7 +3,11 @@
 {
   environment.systemPackages = with pkgs; [
     # Wine and Windows Compatibility
-    wineWowPackages.waylandFull
+    wineWowPackages.staging
     winetricks
   ];
+
+  environment.variables = {
+    WINEPREFIX = "~/.wine_kde_plasma5";
+  };
 }

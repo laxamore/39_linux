@@ -15,9 +15,15 @@
     home-manager
     git
     glib
-    arc-icon-theme
-    xarchiver
+    nix-index
   ];
 
   programs.zsh.enable = true;
+
+  programs.neovim = {
+    enable = true;
+    viAlias = true;
+    vimAlias = true;
+    defaultEditor = true;
+  };
 }
