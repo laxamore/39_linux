@@ -1,7 +1,7 @@
 require("telescope").setup {
   defaults = {
     file_ignore_patterns = { "node_modules", ".git" },
-    preview = false,
+    preview = true,
   },
   pickers = {
     find_files = {

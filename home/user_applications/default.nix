@@ -24,6 +24,7 @@
     kicad
     git
     stm32cubemx
+    python39
     
     # Password Manager
     keepassxc
@@ -51,6 +52,9 @@
     
     # 3D Printing
     bambu-studio
+
+    # Recording
+    obs-studio
   ]);
 
 }
