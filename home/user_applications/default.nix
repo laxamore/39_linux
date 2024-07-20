@@ -25,6 +25,7 @@
     git
     stm32cubemx
     python39
+    kingstvis
     
     # Password Manager
     keepassxc
